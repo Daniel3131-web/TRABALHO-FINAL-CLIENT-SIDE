@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O NAVALHADOR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Imgs/Icon.png" />
+  </head>
+
+ <body>
+    <header>
+      <img
+        src="Imgs/Icon.png"
+        alt="Logo"
+        id="Icon"
+      />
+
+      <div>
+        <a href="#Servicos">Serviços</a>
+        <a href="#Equipe">Equipe</a>
+        <a href="#Galeria">Galeria</a>
+      </div>
+    </header>
+    <main>
+      <section id="Inicio">
+        <h1>O Navalhador</h1>
+        <h3>Barbearia</h3>
+      </section>
+
+      <section id="Servicos">
+        <h2>Serviços</h2>
+        <div class="Pacote">
+          <h4>Pacote 01</h4>
+          <h2>R$ 50,00</h2>
+          <ul>
+            <li>Corte</li>
+            <li>Sobrancelha</li>
+            <li>Freestyle</li>
+          </ul>
+        </div>
+        <div class="Pacote">
+          <h4>Pacote 02</h4>
+          <h2>R$ 75,00</h2>
+          <ul>
+            <li>Corte</li>
+            <li>Sobrancelha</li>
+            <li>Freestyle</li>
+            <li>Barba</li>
+          </ul>
+        </div>
+        <div class="Pacote" id="Pacote03">
+          <h4>Pacote 03</h4>
+          <h2>R$ 90,00</h2>
+          <ul>
+            <li>Corte (2x)</li>
+            <li>Sobrancelha</li>
+            <li>Freestyle</li>
+            <li>Barba</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="Equipe">
+          <h2>Equipe</h2>
+        <div id="TextoEquipe">
+          <h3></h3>
+          <p id="textoExibido">
+            Clique nas fotos para saber mais sobre nossa equipe! 
+          </p>
+        </div>
+        <div id="FotosEquipe">
+          <img src="Imgs/Barbeiro01.jpg" alt="Barbeiro (Equipe)" class="FotoEquipe" onclick="mostrarTexto(1)"/>
+          <img src="Imgs/Barbeiro02.jpg" alt="Barbeiro (Equipe)" class="FotoEquipe" onclick="mostrarTexto(2)"/>
+          <img src="Imgs/Barbeiro03.jpg" alt="Barbeiro (Equipe)" class="FotoEquipe" onclick="mostrarTexto(3)"/>
+          <img src="Imgs/Barbeiro04.jpg" alt="Barbeiro (Equipe)" class="FotoEquipe" onclick="mostrarTexto(4)"/>
+        </div>
+      </section>
+
+      <section id="Galeria">
+        <h2>Galeria</h2>
+        <div class="slider-container">
+          <div class="slider-label" id="sliderLabel">ANTES</div>
+          
+          <div class="slider-wrapper" id="sliderWrapper">
+            <div class="slider-item">
+              <img id="sliderImg" src="Imgs/Antes01.png" alt="Corte Antes 1">
+            </div>
+          </div>
+
+          <div class="slider-nav">
+            <span class="dot active" onclick="irParaSlide(0)"></span>
+            <span class="dot" onclick="irParaSlide(1)"></span>
+            <span class="dot" onclick="irParaSlide(2)"></span>
+            <span class="dot" onclick="irParaSlide(3)"></span>
+          </div>
+        </div>
+
+        <div class="botoes-container">
+          <button class="toggle-btn" onclick="slideAnterior()">← Anterior</button>
+          <button class="toggle-btn" onclick="slideProximo()">Próximo →</button>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+        <div id="Icons">
+            <img src="Imgs/Whats.png" alt="WhatsApp" />
+            <img src="Imgs/Face.png" alt="Facebook" />
+            <img src="Imgs/Insta.png" alt="Instagram" />
+            <img src="Imgs/X_icon.svg.png" alt="X" />
+        </div>
+
+        <div class="footerTexts">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+                suscipit sequi qui tenetur nemo ipsa delectus et, cumque veniam earum
+                recusandae aspernatur molestias, incidunt voluptas quam at omnis quod
+                unde.
+            </p>
+        </div>
+
+        <div class="footerTexts">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet tenetur
+                neque est, assumenda quo accusantium in eveniet? Ad quidem harum
+                quibusdam sapiente quos id officiis dicta sed est adipisci? Fuga.
+            </p>
+        </div>
+
+        <div class="footerTexts">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                odio nulla harum eum sint voluptas aliquam architecto accusamus
+                maxime, sequi in soluta cum reiciendis, sapiente nisi blanditiis
+                dolores iusto quibusdam?
+            </p>
+        </div>
+
+        <div id="Direitos">
+            <p>© 2024 O NAVALHADOR. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  </body>
+
+  <script src="main.js"></script>
+</html>
